@@ -1,0 +1,84 @@
+[
+    {
+        "label": "*",
+        "importPath": "krita",
+        "description": "krita",
+        "isExtraImport": true,
+        "detail": "krita",
+        "documentation": {}
+    },
+    {
+        "label": "QTableView",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDockWidget",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QAbstractItemView",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QAbstractTableModel",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PyQt5.QtCore",
+        "description": "PyQt5.QtCore",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "BrushTableModel",
+        "kind": 6,
+        "importPath": "brushmanager",
+        "description": "brushmanager",
+        "peekOfCode": "class BrushTableModel(QAbstractTableModel):\n    def __init__(self, brushes, parent=None):\n        super().__init__(parent)\n        self.brushes = brushes\n        self.headers = [\"Name\", \"Size\", \"Opacity\", \"Category\", \"Tags\"]\n    def rowCount(self, parent=None):\n        return len(self.brushes)\n    def columnCount(self, parent=None):\n        return len(self.headers)\n    def data(self, index, role=Qt.DisplayRole):",
+        "detail": "brushmanager",
+        "documentation": {}
+    },
+    {
+        "label": "BrushManagerDocker",
+        "kind": 6,
+        "importPath": "brushmanager",
+        "description": "brushmanager",
+        "peekOfCode": "class BrushManagerDocker(DockWidget):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"BrushManager\")\n        # Hauptwidget\n        self.mainWidget = QWidget()\n        self.layout = QVBoxLayout()\n        # Tabelle\n        self.table = QTableView()\n        self.table.setSelectionBehavior(QAbstractItemView.SelectRows)",
+        "detail": "brushmanager",
+        "documentation": {}
+    }
+]
