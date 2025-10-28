@@ -1,4 +1,4 @@
-from .brushmanager import *
+import brushmanager
 
 # And add the extension to Krita's list of extensions:
 app = Krita.instance()
